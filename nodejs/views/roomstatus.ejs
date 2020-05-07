@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <title>
+    Excelsior
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="/stylesheets/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="/stylesheets/blk-design-system.css" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="/demo/blk.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.42em;
+      color: #A7A1AE;
+      background: url(/img/bg_image.jpg) no-repeat;
+      background-size: 100%;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: 300;
+      line-height: 1em;
+      text-align: center;
+      color: rgb(241, 241, 241);
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: 300;
+      text-align: center;
+      display: block;
+      line-height: 1em;
+      padding-bottom: 2em;
+      color: #FB667A;
+    }
+
+    h2 a {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #FB667A;
+      text-decoration: none;
+    }
+
+    .blue {
+      color: #ffffff;
+    }
+
+    .yellow {
+      color: #FFF842;
+    }
+
+    .container th h1 {
+      font-weight: bold;
+      font-size: 1em;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .container td {
+      font-weight: normal;
+      font-size: 1em;
+      -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+      -moz-box-shadow: 0 2px 2px -2px #0E1119;
+      box-shadow: 0 2px 2px -2px #0E1119;
+    }
+
+    .container {
+      text-align: left;
+      overflow: hidden;
+      width: 80%;
+      margin: 0 auto;
+      display: table;
+      padding: 0 0 8em 0;
+    }
+
+    .container td, .container th {
+      padding-bottom: 2%;
+      padding-top: 2%;
+      padding-left: 2%;
+    }
+
+    /* Background-color of the odd rows */
+    .container tr:nth-child(odd) {
+      background-color: #323C50;
+    }
+
+    /* Background-color of the even rows */
+    .container tr:nth-child(even) {
+      background-color: #2C3446;
+    }
+
+    .container th {
+      background-color: #1F2739;
+    }
+
+    .container td:first-child {
+      color: #FB667A;
+    }
+
+    .container tr:hover {
+      background-color: #464A52;
+      -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+      -moz-box-shadow: 0 6px 6px -6px #0E1119;
+      box-shadow: 0 6px 6px -6px #0E1119;
+    }
+
+    .container td:hover {
+      background-color: #FFF842;
+      color: #403E10;
+      font-weight: bold;
+
+      box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+      transform: translate3d(6px, -6px, 0);
+
+      transition-delay: 0s;
+      transition-duration: 0.4s;
+      transition-property: all;
+      transition-timing-function: line;
+    }
+
+    @media (max-width: 800px) {
+
+      .container td:nth-child(4),
+      .container th:nth-child(4) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-toggle d-inline">
+          <button type="button" class="navbar-toggler">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </button>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar navbar-kebab"></span>
+        <span class="navbar-toggler-bar navbar-kebab"></span>
+        <span class="navbar-toggler-bar navbar-kebab"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/indexLogin">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/RouteAnalyser/RouteAnalyser/routeAnalysis.html">Wayfinding <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/heat">Enviroment Statistics <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/roomstatus">Room Status</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Welcome: <%= username %></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="main" , class="container clear-top">
+
+  </div>
+  <div class="content-center">
+    <div class="row row-grid justify-content-between align-items-center text-center">
+      <div class="col-lg-12 col-md-6">
+        <p>
+        </p>
+        <br>
+        </br>
+        <p>
+        </p>
+        <br>
+        </br>
+        <h1 class="text-white">Computer Science Building
+          <br />
+          <span class="text-white">Room Booking</span>
+        </h1>
+      </div>
+      <table class="container">
+        <thead>
+          <tr>
+            <th>
+              <h1>Floor</h1>
+            </th>
+            <th>
+              <h1>Room</h1>
+            </th>
+            <th>
+              <h1>9:00</h1>
+            </th>
+            <th>
+              <h1>10:00</h1>
+            </th>
+            <th>
+              <h1>11:00</h1>
+            </th>
+            <th>
+              <h1>12:00</h1>
+            </th>
+            <th>
+              <h1>13:00</h1>
+            </th>
+            <th>
+              <h1>14:00</h1>
+            </th>
+            <th>
+              <h1>15:00</h1>
+            </th>
+            <th>
+              <h1>16:00</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0G</td>
+            <td>034</td>
+            <td><%= g0349 %></td>
+            <td><%= g03410 %></td>
+            <td><%= g03411 %></td>
+            <td><%= g03412 %></td>
+            <td><%= g03413 %></td>
+            <td><%= g03414 %></td>
+            <td><%= g03415 %></td>
+            <td><%= g03416 %></td>
+          </tr>
+          <tr>
+            <td>0G</td>
+            <td>037</td>
+            <td><%= g0379 %></td>
+            <td><%= g03710 %></td>
+            <td><%= g03711 %></td>
+            <td><%= g03712 %></td>
+            <td><%= g03713 %></td>
+            <td><%= g03714 %></td>
+            <td><%= g03715 %></td>
+            <td><%= g03716 %></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>032</td>
+            <td><%= f20329 %></td>
+            <td><%= f203210 %></td>
+            <td><%= f203211 %></td>
+            <td><%= f203212 %></td>
+            <td><%= f203213 %></td>
+            <td><%= f203214 %></td>
+            <td><%= f203215 %></td>
+            <td><%= f203216 %></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>033</td>
+            <td><%= f20339 %></td>
+            <td><%= f203310 %></td>
+            <td><%= f203311 %></td>
+            <td><%= f203312 %></td>
+            <td><%= f203313 %></td>
+            <td><%= f203314 %></td>
+            <td><%= f203315 %></td>
+            <td><%= f203316 %></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+      </p>
+</body>
+
+</html>
